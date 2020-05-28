@@ -3,7 +3,16 @@ import Vuex from 'vuex'
 
 const createStore = () => {
    return new Vuex.Store({
-      state: {},
-      getters: {}
+      state: {
+         people: [],
+      },
+      getters: {
+         people(state) {
+            return state.people
+         }
+      },
+      mutations: {
+
+      }
    })
 }
